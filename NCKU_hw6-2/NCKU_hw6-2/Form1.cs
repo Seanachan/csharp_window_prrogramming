@@ -195,9 +195,9 @@ namespace NCKU_hw6_2
             };
 
             // Create buttons for each block type
-            Button grassButton = new Button { Text = "Grass", BackgroundImage=img_grass,BackgroundImageLayout=ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
-            Button dirtButton = new Button { Text = "Dirt", BackgroundImage=img_dirt, BackgroundImageLayout=ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
-            Button stoneButton = new Button { Text = "Stone", BackgroundImage=img_stone, BackgroundImageLayout = ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
+            Button grassButton = new Button { Text = "", BackgroundImage=img_grass,BackgroundImageLayout=ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
+            Button dirtButton = new Button { Text = "", BackgroundImage=img_dirt, BackgroundImageLayout=ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
+            Button stoneButton = new Button { Text = "", BackgroundImage=img_stone, BackgroundImageLayout = ImageLayout.Stretch, Size = new Size(blockSize, blockSize) };
 
             // Hook up event handlers to set the selected block type
             grassButton.Click += (s, e) => selectedBlock = (BlockType.Grass);
@@ -607,6 +607,31 @@ namespace NCKU_hw6_2
                 }
             }
         }
+
+        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+            {
+                e.IsInputKey = true;
+            }
+        }
+
+        private void hScrollBar1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void vScrollBar1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+            {
+                e.Handled = true;
+            }
+        }
+
         private void SaveGameState(string filename)
         {
             state = CreateGameState(); // Create the game state to save
