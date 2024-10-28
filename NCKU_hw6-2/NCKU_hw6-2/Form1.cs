@@ -25,19 +25,21 @@ namespace NCKU_hw6_2
         private const int blockSize = 64;
         private const int rows = 15;
         private const int columns = 30;
+        private const float Gravity = 0.5f;
+        private const float JumpStrength = -10f;
+
         private Panel hotbar;
         private Panel blockPanel;
         public Image img_grass, img_dirt, img_stone;
         public Steve steve;
-        public static BlockType selectedBlock;
         private Panel pausePanel = new Panel();
+
         private bool mapInitialized = false;
+        private bool _isJumping = false;
+
+        public static BlockType selectedBlock;
 
         private Vector2F _playerVelocity = new Vector2F(0, 0);
-        private bool _isJumping = false;
-        private const float Gravity = 0.6f;
-        private const float JumpStrength = -9f;
-        private const int cellWidth = 48;
         public GameState state;
 
         Timer gameTimer = new Timer();
@@ -69,7 +71,6 @@ namespace NCKU_hw6_2
             map.Margin = new Padding(0);
             map.AutoSize=false;
             
-            //KeyDown +=OnKeyDown;
             KeyUp += OnKeyUp;
             this.KeyPreview = true;
             this.Controls.Add(pausePanel);
@@ -77,7 +78,6 @@ namespace NCKU_hw6_2
             pausePanel.Controls.Add(save_and_backhome);
             pausePanel.Size = new Size(978, 781);
 
-            //stevePanel.BackColor = Color.Transparent;
             pictureBox1.BackColor= Color.Transparent;
             setVisibleGame(false);
             setVisibleHome(true);
@@ -106,17 +106,6 @@ namespace NCKU_hw6_2
             flowLayoutPanel1.Location = new Point(this.ClientSize.Height-flowLayoutPanel1.Size.Height*2, this.ClientSize.Width/2);
             flowLayoutPanel1.Location = new Point(this.ClientSize.Width/2-flowLayoutPanel1.Width/2, this.ClientSize.Height-3*flowLayoutPanel1.Height);
             flowLayoutPanel1.Size = new Size(blockSize*5, blockSize+5);
-        }
-        private void removeMap()
-        {
-            for (int i = 0; i<rows; i++)
-            {
-                for (int j = 0; j<columns; j++)
-                {
-                    Control controlToRemove = map.GetControlFromPosition(j, i);
-                    map.Controls.Remove(controlToRemove);
-                }
-            }
         }
         private void setMap()
         {
@@ -149,6 +138,17 @@ namespace NCKU_hw6_2
                         Block newBlock = new Block(BlockType.Air);
                         map.Controls.Add(newBlock, j, i);
                     }
+                }
+        }
+            }
+        private void removeMap()
+        {
+            for (int i = 0; i<rows; i++)
+            {
+                for (int j = 0; j<columns; j++)
+                {
+                    Control controlToRemove = map.GetControlFromPosition(j, i);
+                    map.Controls.Remove(controlToRemove);
                 }
             }
         }
@@ -379,7 +379,7 @@ namespace NCKU_hw6_2
                 Block left = (Block)map.GetControlFromPosition(col, row);
                 Block right = (Block)map.GetControlFromPosition(col2, row);
                 //Console.WriteLine("{0}, {1}", right.Location.X, right.Location.Y);
-                //Console.WriteLine("{0}, {1}", steve.Right, steve.Top);
+                //Console.WriteLine("{0}, {1}", steve.position.X+steve.Width, steve.position.Y);
                 //Console.WriteLine(row);
                 //Console.WriteLine(col);
 
@@ -394,8 +394,8 @@ namespace NCKU_hw6_2
         }
         private bool IsBlocked_right(Vector2F position)
         {
-            int x = (int)steve.Left+blockSize;
-            int y = steve.Top;
+            int x = (int)steve.position.X+blockSize;
+            int y = (int)steve.position.Y;
             Console.WriteLine("map: {0},{1}",map.Left,map.Top);
             int row = (y+5)/blockSize;
             int col = (x+1)/blockSize;
@@ -416,7 +416,7 @@ namespace NCKU_hw6_2
         }
         private bool IsBlocked_left(Vector2F position)
         {
-            int x = (int)steve.Left;
+            int x = (int)steve.position.X;
             int y = (int) steve.Location.Y;
             int row = (y+3)/blockSize;
             int col = (x-5)/blockSize;
@@ -436,26 +436,57 @@ namespace NCKU_hw6_2
             }
         }
 
+        private bool IsBlocked_down(Vector2F position)
+        {
+            int x = (int)steve.position.X;
+            int y = (int)steve.position.Y+steve.Height+1;
+            int row = (y)/blockSize;
+            int col2 = (x+steve.Size.Width)/blockSize;
+            int col = (x)/blockSize;
+
+            //int row = (int)((steve.position.Y + steve.Height + 1) / blockSize);
+            int colLeft = (int)(steve.position.X / blockSize);
+            int colRight = (int)((steve.position.X + steve.Width) / blockSize);
+
+
+            try
+            {
+                Block down_left = (Block)map.GetControlFromPosition(col, row);
+                Block down_right = (Block)map.GetControlFromPosition(col2, row);
+            if (map.GetControlFromPosition(colLeft, row) is Block downLeft && downLeft.type != BlockType.Air ||
+                map.GetControlFromPosition(colRight, row) is Block downRight && downRight.type != BlockType.Air)
+            {
+                steve.position.Y = row * blockSize - steve.Height; // Snap to grid
+                 //steve.position.X = (col-1) * blockSize ;
+                    _playerVelocity.Y = 0;
+                _isJumping = false;
+                return true;
+            }
+
+                return (down_left.type!=BlockType.Air)||(down_right.type != BlockType.Air);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return true;
+            }
+        }
         private bool IsOnGround()
         {
-            //int x = steve.Left;
-            //int y=steve.Bottom;
-
-            //int x2 = steve.Right;
             int x = (int) steve.position.X;
             int y = (int)steve.position.Y+steve.Size.Height;
             int x2 = (int)steve.position.X+steve.Size.Width;
 
-            int row = (y+5)/blockSize;
-            int col = (x+2)/blockSize;
-            int col2= (x2-2)/blockSize;
+            int row = (y)/blockSize;
+            int col = (x)/blockSize;
+            int col2= (x2)/blockSize;
 
             try
             {
                 Block left = (Block)map.GetControlFromPosition(col, row);
                 Block right = (Block)map.GetControlFromPosition(col2, row);
                 Console.WriteLine("{0}, {1}", right.Location.X, right.Location.Y);
-                Console.WriteLine("{0}, {1}", steve.Right, steve.Top);
+                Console.WriteLine("{0}, {1}", steve.position.X+steve.Width, steve.position.Y);
                 Console.WriteLine(row);
                 Console.WriteLine(col);
 
@@ -472,9 +503,19 @@ namespace NCKU_hw6_2
 
         private void GameUpdate(object sender, EventArgs e)
         {
-            steve.position.Y += _playerVelocity.Y;
-            UpdateStevePosition();
-            if (!IsOnGround())
+            if((_playerVelocity.Y>0 && !IsBlocked_down(steve.position))||
+               (_playerVelocity.Y<=0 && !IsBlocked_up(steve.position))
+                )
+            {
+                steve.position.Y += _playerVelocity.Y;
+
+                UpdateStevePosition();
+            }
+            else
+            {
+                _playerVelocity.Y =0;
+            }
+            if (!IsBlocked_down(steve.position))
             {
                 Console.WriteLine("on the ground");
                 _playerVelocity.Y += Gravity;
@@ -488,14 +529,20 @@ namespace NCKU_hw6_2
 
             if (steve.position.X+_playerVelocity.X>0 && steve.position.X+_playerVelocity.X+steve.Width<map.Size.Width)
             {
-                if(_playerVelocity.X<0&&!IsBlocked_left(steve.position+_playerVelocity))
-                    steve.position.X += _playerVelocity.X;
-                else if (_playerVelocity.X>0&&!IsBlocked_right(steve.position+_playerVelocity))
+                if (_playerVelocity.X<0)
                 {
-                    steve.position.X += _playerVelocity.X;
+                    if (!IsBlocked_left(steve.position+_playerVelocity))
+                        steve.position.X+=_playerVelocity.X;
+                    else
+                        _playerVelocity.X=0;
                 }
-                //_playerVelocity.X=0;
-
+                else
+                {
+                    if(!IsBlocked_right(steve.position+_playerVelocity))
+                        steve.position.X+=_playerVelocity.X;
+                    else
+                        _playerVelocity.X=0;
+                }
             }
             
             
@@ -504,25 +551,19 @@ namespace NCKU_hw6_2
         }
         public void MoveLeft()
         {
-            Vector2F newPosition = steve.position + new Vector2F(-1.5f, 0);
-            if (steve.Left>10)
+            Vector2F newPosition = steve.position + new Vector2F(-2f, 0);
+            if (!IsBlocked_left(newPosition)&&steve.position.X>10)
             {
-                //!IsBlocked_left(newPosition)&&
-                //steve.position = newPosition;
-                //UpdateStevePosition();
                 _playerVelocity.X = -1.5f;
             }
         }
 
         private void MoveRight()
         {
-            Vector2F newPosition = steve.position + new Vector2F(1.5f, 0);
-            if (steve.Right<map.Size.Width-10)
+            Vector2F newPosition = steve.position + new Vector2F(2f, 0);
+            if (!IsBlocked_right(newPosition)&&steve.position.X+steve.Width<map.Size.Width-10)
             {
-                //!IsBlocked_right(newPosition)&&
-                Console.WriteLine("yes");
-                //steve.position = newPosition;
-                //UpdateStevePosition();
+                
                 _playerVelocity.X = 1.5f;
             }
         }
@@ -537,6 +578,7 @@ namespace NCKU_hw6_2
                 _isJumping = true;
             }
         }
+        //save game status
         private GameState LoadGameState(string filename)
         {
             using (FileStream fs = new FileStream(filename, FileMode.Open))
