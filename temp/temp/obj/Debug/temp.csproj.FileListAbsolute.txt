@@ -1,0 +1,7 @@
+C:\Users\Seana\source\repos\temp\temp\bin\Debug\temp.exe.config
+C:\Users\Seana\source\repos\temp\temp\bin\Debug\temp.exe
+C:\Users\Seana\source\repos\temp\temp\bin\Debug\temp.pdb
+C:\Users\Seana\source\repos\temp\temp\obj\Debug\temp.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\temp\temp\obj\Debug\temp.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\temp\temp\obj\Debug\temp.exe
+C:\Users\Seana\source\repos\temp\temp\obj\Debug\temp.pdb

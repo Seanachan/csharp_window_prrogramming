@@ -1,0 +1,22 @@
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.exe.config
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.exe
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.pdb
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.AssemblyReference.cache
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Form1.resources
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Game.resources
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Properties.Resources.resources
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.GenerateResource.cache
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.CoreCompileInputs.cache
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.exe
+C:\Users\Pai S\source\repos\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.pdb
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.exe.config
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.exe
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\bin\Debug\NCKU_hw5-1.pdb
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Game.resources
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5_1.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.exe
+C:\Users\Seana\source\repos\NCKU_hw5-1\NCKU_hw5-1\NCKU_hw5-1\obj\Debug\NCKU_hw5-1.pdb

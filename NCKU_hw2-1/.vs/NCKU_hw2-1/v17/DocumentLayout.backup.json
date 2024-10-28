@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Seana\\source\\repos\\NCKU_hw2-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E59902-5FBC-45EC-AFC0-BD19E5FB186C}|NCKU_hw2-1\\NCKU_hw2-1.csproj|c:\\users\\seana\\source\\repos\\ncku_hw2-1\\ncku_hw2-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E59902-5FBC-45EC-AFC0-BD19E5FB186C}|NCKU_hw2-1\\NCKU_hw2-1.csproj|solutionrelative:ncku_hw2-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Seana\\source\\repos\\NCKU_hw2-1\\NCKU_hw2-1\\Program.cs",
+              "RelativeDocumentMoniker": "NCKU_hw2-1\\Program.cs",
+              "ToolTip": "C:\\Users\\Seana\\source\\repos\\NCKU_hw2-1\\NCKU_hw2-1\\Program.cs",
+              "RelativeToolTip": "NCKU_hw2-1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:39:40.661Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

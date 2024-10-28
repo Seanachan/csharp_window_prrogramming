@@ -1,0 +1,10 @@
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\bin\Debug\NCKU_hw3-1.exe.config
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\bin\Debug\NCKU_hw3-1.exe
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\bin\Debug\NCKU_hw3-1.pdb
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3_1.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3_1.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3-2.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3-1.exe
+C:\Users\Seana\source\repos\NCKU_hw3-2\NCKU_hw3-2\obj\Debug\NCKU_hw3-1.pdb

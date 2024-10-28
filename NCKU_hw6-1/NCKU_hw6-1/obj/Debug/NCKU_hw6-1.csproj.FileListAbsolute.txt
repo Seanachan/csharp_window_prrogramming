@@ -1,0 +1,10 @@
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\bin\Debug\NCKU_hw6-1.exe.config
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\bin\Debug\NCKU_hw6-1.exe
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\bin\Debug\NCKU_hw6-1.pdb
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6-1.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6_1.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6_1.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6-1.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6-1.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6-1.exe
+C:\Users\Seana\source\repos\NCKU_hw6-1\NCKU_hw6-1\obj\Debug\NCKU_hw6-1.pdb

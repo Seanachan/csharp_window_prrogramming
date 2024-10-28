@@ -1,0 +1,30 @@
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe.config
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.exe
+C:\Users\Seana\source\repos\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.pdb
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe.config
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.pdb
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.AssemblyReference.cache
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Form1.resources
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Properties.Resources.resources
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.GenerateResource.cache
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.CoreCompileInputs.cache
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.exe
+C:\Users\Pai S\Downloads\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe.config
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.exe
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\bin\Debug\NCKU_hw5-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5_2.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.exe
+C:\Users\Seana\source\repos\NCKU_hw5-2\f74126335_practice_5-2\NCKU_hw5-2\NCKU_hw5-2\obj\Debug\NCKU_hw5-2.pdb

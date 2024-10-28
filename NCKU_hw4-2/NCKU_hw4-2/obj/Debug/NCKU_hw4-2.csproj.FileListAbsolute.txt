@@ -1,0 +1,30 @@
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe.config
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.pdb
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.AssemblyReference.cache
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Form1.resources
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Properties.Resources.resources
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.GenerateResource.cache
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.CoreCompileInputs.cache
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.exe
+C:\Users\Pai S\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.pdb
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe.config
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.pdb
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.AssemblyReference.cache
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Form1.resources
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Properties.Resources.resources
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.GenerateResource.cache
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.CoreCompileInputs.cache
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.exe
+\\192.168.31.88\windows共享檔案\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe.config
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.exe
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\bin\Debug\NCKU_hw4-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4_2.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.exe
+C:\Users\Seana\source\repos\NCKU_hw4-2\NCKU_hw4-2\obj\Debug\NCKU_hw4-2.pdb

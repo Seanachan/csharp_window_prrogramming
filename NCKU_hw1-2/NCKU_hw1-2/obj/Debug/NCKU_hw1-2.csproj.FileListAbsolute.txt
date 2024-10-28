@@ -1,0 +1,14 @@
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.exe.config
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.exe
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.pdb
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.csproj.AssemblyReference.cache
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.csproj.CoreCompileInputs.cache
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.exe
+C:\Users\Pai S\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.exe.config
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.exe
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\bin\Debug\NCKU_hw1-2.pdb
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.exe
+C:\Users\Seana\source\repos\NCKU_hw1-2\NCKU_hw1-2\obj\Debug\NCKU_hw1-2.pdb
