@@ -1,0 +1,12 @@
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7-2.csproj.AssemblyReference.cache
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7_2.Form2.resources
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7_1.Properties.Resources.resources
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7-2.csproj.GenerateResource.cache
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7-2.csproj.CoreCompileInputs.cache
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7-1.exe
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7-1.pdb
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\bin\Debug\NCKU_hw7-1.exe.config
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\bin\Debug\NCKU_hw7-1.exe
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\bin\Debug\NCKU_hw7-1.pdb
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7_2.Form1.resources
+C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-1\obj\Debug\NCKU_hw7_1.Form3.resources

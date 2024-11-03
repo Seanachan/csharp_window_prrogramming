@@ -30,7 +30,8 @@ namespace NCKU_hw6_2
 
         private Panel hotbar;
         private Panel blockPanel;
-        public Image img_grass, img_dirt, img_stone;
+        //img_grass = Image.FromFile("img_grass.png"); img_dirt = Image.FromFile("img_dirt.png"); img_stone = ;
+        private  Image img_grass, img_dirt, img_stone= Image.FromFile("img_stone.png");
         public Steve steve;
         private Panel pausePanel = new Panel();
 
@@ -87,7 +88,7 @@ namespace NCKU_hw6_2
             this.BackgroundImage = Image.FromFile("background.jpg");
             this.BackColor = Color.Gray;
             this.BackgroundImageLayout = ImageLayout.Stretch;
-            img_grass = Image.FromFile("img_grass.png"); img_dirt = Image.FromFile("img_dirt.png"); img_stone = Image.FromFile("img_stone.png");
+            
 
             gameTimer.Interval = 14; // Roughly 60 FPS
             gameTimer.Tick += GameUpdate;
@@ -184,7 +185,24 @@ namespace NCKU_hw6_2
             map.Top = -vScrollBar1.Value;
             UpdateStevePosition();
         }
+        //private void button_Click(object sender, EventArgs e)
+        //{
+        //    Button b = (Button)sender;
+        //   //sender =  sender as Button;
+        //    switch (b.BackgroundImage)
+        //    {
+        //        case img_grass:
 
+        //            break;
+        //        case img_dirt:
+
+        //            break;
+        //        case img_stone:
+
+        //            break;
+
+        //    }
+        //}
         private void SetupHotbar()
         {
             FlowLayoutPanel hotbar = new FlowLayoutPanel
