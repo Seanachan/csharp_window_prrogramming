@@ -17,16 +17,30 @@ namespace NCKU_hw7_2
     {
         Form3 form3;
         string currentFilePath;
+        private bool notSaved = false, dialogPresented=false;
+        private Stack<Memo> history = new Stack<Memo>();
         public Form2()
         {
             InitializeComponent();
             saveFileDialog1.Filter = "文字檔 (*.txt)|*.txt|自訂文字檔 (*.mytxt)|*.mytxt";
             //form3 = new Form3(textBox1);
+            save_timer.Start();
         }
 
         private void 結束ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (notSaved)
+            {
+                DialogResult result = MessageBox.Show("未儲存的變更，是否確定要關閉？", "未儲存的變更",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result==DialogResult.Yes)
+                    this.Close();
+
+            }
+            else
+            {
+                this.Close();
+            }
         }
         private void SaveCustomFile(string filePath)
         {
@@ -126,8 +140,9 @@ namespace NCKU_hw7_2
             {
                 currentFilePath = saveFileDialog1.FileName;
                 SaveFile(currentFilePath);
-                //MessageBox.Show("檔案複製成功 !.....");
             }
+            notSaved = false;
+            history.Push(new Memo(currentFilePath));
         }
 
         private void 儲存ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -144,11 +159,25 @@ namespace NCKU_hw7_2
             {
                 SaveFile(currentFilePath);
             }
+            notSaved = false;
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!history.Any())
+                return;
 
+            Memo memo = history.Pop();
+            if (memo.filePath==null)
+            {
+                textBox1.Text = memo.Text;
+                textBox1.ForeColor = memo.TextBoxColor;
+                textBox1.Font = new Font(memo.TextBoxFont, memo.TextBoxFontStyle);
+            }
+            else
+            {
+                File.Delete(memo.filePath);
+            }
         }
 
         private void redoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -171,6 +200,30 @@ namespace NCKU_hw7_2
         {
             if (form3 != null && !form3.IsDisposed) form3.Focus();
             else { form3 = new Form3(textBox1); form3.Show(); }
+        }
+
+        private void save_timer_Tick(object sender, EventArgs e)
+        {
+            if (dialogPresented|| !notSaved) return;
+            dialogPresented = true;
+            string selectedFilePath = saveFileDialog1.FileName;
+            if (string.IsNullOrEmpty(currentFilePath))
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    SaveFile(saveFileDialog1.FileName);
+            }
+            else
+                SaveFile(currentFilePath);
+
+            dialogPresented = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            notSaved = true;
+            //MessageBox.Show("textchanged");
+            Memo memo = new Memo(textBox1.Text,textBox1.Font,textBox1.ForeColor,textBox1.Font.Style);
+            history.Push(memo);
         }
     }
 }

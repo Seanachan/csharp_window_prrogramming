@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.檔案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.儲存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,18 +37,19 @@
             this.剪下ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.複製ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.貼上ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.字數統計ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文字ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.字型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.顔色ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.尋找與取代ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.結束ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.字數統計ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.尋找與取代ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.save_timer = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,8 +64,7 @@
             this.結束ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(358, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(363, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -107,23 +108,44 @@
             // 剪下ToolStripMenuItem
             // 
             this.剪下ToolStripMenuItem.Name = "剪下ToolStripMenuItem";
-            this.剪下ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.剪下ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.剪下ToolStripMenuItem.Text = "剪下";
             this.剪下ToolStripMenuItem.Click += new System.EventHandler(this.剪下ToolStripMenuItem_Click);
             // 
             // 複製ToolStripMenuItem
             // 
             this.複製ToolStripMenuItem.Name = "複製ToolStripMenuItem";
-            this.複製ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.複製ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.複製ToolStripMenuItem.Text = "複製";
             this.複製ToolStripMenuItem.Click += new System.EventHandler(this.複製ToolStripMenuItem_Click);
             // 
             // 貼上ToolStripMenuItem
             // 
             this.貼上ToolStripMenuItem.Name = "貼上ToolStripMenuItem";
-            this.貼上ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.貼上ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.貼上ToolStripMenuItem.Text = "貼上";
             this.貼上ToolStripMenuItem.Click += new System.EventHandler(this.貼上ToolStripMenuItem_Click);
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
+            // 
+            // 字數統計ToolStripMenuItem
+            // 
+            this.字數統計ToolStripMenuItem.Name = "字數統計ToolStripMenuItem";
+            this.字數統計ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.字數統計ToolStripMenuItem.Text = "字數統計";
+            this.字數統計ToolStripMenuItem.Click += new System.EventHandler(this.字數統計ToolStripMenuItem_Click);
             // 
             // 文字ToolStripMenuItem
             // 
@@ -137,16 +159,23 @@
             // 字型ToolStripMenuItem
             // 
             this.字型ToolStripMenuItem.Name = "字型ToolStripMenuItem";
-            this.字型ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.字型ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
             this.字型ToolStripMenuItem.Text = "字型";
             this.字型ToolStripMenuItem.Click += new System.EventHandler(this.字型ToolStripMenuItem_Click);
             // 
             // 顔色ToolStripMenuItem
             // 
             this.顔色ToolStripMenuItem.Name = "顔色ToolStripMenuItem";
-            this.顔色ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.顔色ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
             this.顔色ToolStripMenuItem.Text = "顔色";
             this.顔色ToolStripMenuItem.Click += new System.EventHandler(this.顔色ToolStripMenuItem_Click);
+            // 
+            // 尋找與取代ToolStripMenuItem
+            // 
+            this.尋找與取代ToolStripMenuItem.Name = "尋找與取代ToolStripMenuItem";
+            this.尋找與取代ToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
+            this.尋找與取代ToolStripMenuItem.Text = "尋找與取代";
+            this.尋找與取代ToolStripMenuItem.Click += new System.EventHandler(this.尋找與取代ToolStripMenuItem_Click);
             // 
             // 結束ToolStripMenuItem
             // 
@@ -157,50 +186,26 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 40);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(0, 32);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(900, 557);
+            this.textBox1.Size = new System.Drawing.Size(363, 230);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // undoToolStripMenuItem
+            // save_timer
             // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.redoToolStripMenuItem.Text = "Redo";
-            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
-            // 
-            // 字數統計ToolStripMenuItem
-            // 
-            this.字數統計ToolStripMenuItem.Name = "字數統計ToolStripMenuItem";
-            this.字數統計ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.字數統計ToolStripMenuItem.Text = "字數統計";
-            this.字數統計ToolStripMenuItem.Click += new System.EventHandler(this.字數統計ToolStripMenuItem_Click);
-            // 
-            // 尋找與取代ToolStripMenuItem
-            // 
-            this.尋找與取代ToolStripMenuItem.Name = "尋找與取代ToolStripMenuItem";
-            this.尋找與取代ToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
-            this.尋找與取代ToolStripMenuItem.Text = "尋找與取代";
-            this.尋找與取代ToolStripMenuItem.Click += new System.EventHandler(this.尋找與取代ToolStripMenuItem_Click);
+            this.save_timer.Interval = 30000;
+            this.save_timer.Tick += new System.EventHandler(this.save_timer_Tick);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 329);
+            this.ClientSize = new System.Drawing.Size(363, 263);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.menuStrip1.ResumeLayout(false);
@@ -232,5 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 字數統計ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 尋找與取代ToolStripMenuItem;
+        private System.Windows.Forms.Timer save_timer;
     }
 }

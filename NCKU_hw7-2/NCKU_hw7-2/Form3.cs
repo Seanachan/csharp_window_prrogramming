@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace NCKU_hw7_1
+namespace NCKU_hw7_2
 {
     public partial class Form3 : Form
     {
@@ -35,23 +36,16 @@ namespace NCKU_hw7_1
             }
             else if (textBox.Text.IndexOf(toFind) != -1)
             {
-                int idx;
+                int idx = textBox.Text.IndexOf(toFind); ;
                 if (textBox.SelectedText.Equals(toFind))
                 {
-                    idx = textBox.SelectionStart;
-                    string sub = textBox.Text.Substring((idx + textBox.SelectionLength + 1)%textBox.Text.Length);
-                    if (sub.IndexOf(toFind) != -1)
+                    //start from the end + 1 of selected text
+                    int tmp_idx = (textBox.SelectionStart + textBox.SelectionLength) % textBox.TextLength;
+                    int tmp = textBox.Text.Substring(tmp_idx).IndexOf(toFind);
+                    if (tmp != -1)
                     {
-                        idx = (idx + l  + sub.IndexOf(toFind)+1)%(textBox.Text.Length+l+1);
+                        idx += tmp;
                     }
-                    else
-                    {
-                        idx = textBox.Text.IndexOf(toFind);
-                    }
-                }
-                else
-                {
-                    idx = textBox.Text.IndexOf(toFind);
                 }
 
                 //exist
@@ -63,6 +57,7 @@ namespace NCKU_hw7_1
             {
                 MessageBox.Show("已找不到更多匹配項目", "尋找",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
         }
 
         private void replace_but_Click(object sender, EventArgs e)
@@ -83,7 +78,25 @@ namespace NCKU_hw7_1
 
         private void allReplace_but_Click(object sender, EventArgs e)
         {
+            string toFind = find_textBox.Text;
+            string toReplace = replace_textBox.Text;
+            int l = toFind.Length,start=0;
+            //string sub = textBox.Text;
+            string sub;
+            int idx = textBox.Text.IndexOf(toFind);
+            bool flag = true;
+            while (flag)
+            {
+                textBox.Select(idx, l);
+                textBox.SelectedText = toReplace;
 
+                start = idx+toReplace.Length;
+                sub = textBox.Text.Substring(start%textBox.TextLength);
+                
+                if (sub.IndexOf(toFind) == -1)
+                    break;
+                idx= idx+toReplace.Length+sub.IndexOf(toFind);
+            }
         }
     }
 }

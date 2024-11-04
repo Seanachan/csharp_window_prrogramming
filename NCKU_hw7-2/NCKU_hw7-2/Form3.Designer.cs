@@ -1,4 +1,4 @@
-﻿namespace NCKU_hw7_1
+﻿namespace NCKU_hw7_2
 {
     partial class Form3
     {
