@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU_hw7-2", "NCKU_hw7-1\NCKU_hw7-2.csproj", "{2B5EED44-1279-40FE-9D24-72A3483AFEB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU_hw7-2", "NCKU_hw7-2\NCKU_hw7-2.csproj", "{2B5EED44-1279-40FE-9D24-72A3483AFEB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B9E7A038-7C30-40DF-8197-34AC48B56D7C}
+		SolutionGuid = {1529A97D-A689-45F1-AE2A-478E8AB86CB4}
 	EndGlobalSection
 EndGlobal

@@ -19,12 +19,16 @@ namespace NCKU_hw7_2
         string currentFilePath;
         private bool notSaved = false, dialogPresented=false;
         private Stack<Memo> history = new Stack<Memo>();
+        private Stack<Memo> redoStack = new Stack<Memo>();
+        Memo curState;
         public Form2()
         {
             InitializeComponent();
             saveFileDialog1.Filter = "文字檔 (*.txt)|*.txt|自訂文字檔 (*.mytxt)|*.mytxt";
             //form3 = new Form3(textBox1);
             save_timer.Start();
+            curState = new Memo(textBox1.Text,textBox1.Font,textBox1.ForeColor,textBox1.Font.Style);
+            history.Push(curState);
         }
 
         private void 結束ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +145,7 @@ namespace NCKU_hw7_2
                 currentFilePath = saveFileDialog1.FileName;
                 SaveFile(currentFilePath);
             }
+            if (notSaved) 檔案ToolStripMenuItem.Text = 檔案ToolStripMenuItem.Text.Substring(1);
             notSaved = false;
             history.Push(new Memo(currentFilePath));
         }
@@ -159,6 +164,7 @@ namespace NCKU_hw7_2
             {
                 SaveFile(currentFilePath);
             }
+            if (notSaved) 檔案ToolStripMenuItem.Text = 檔案ToolStripMenuItem.Text.Substring(1);
             notSaved = false;
         }
 
@@ -168,6 +174,12 @@ namespace NCKU_hw7_2
                 return;
 
             Memo memo = history.Pop();
+            redoStack.Push(memo);
+            if (history.Any())
+                memo = history.Pop();
+            else
+                return;
+            //if (memo==curState)
             if (memo.filePath==null)
             {
                 textBox1.Text = memo.Text;
@@ -182,7 +194,19 @@ namespace NCKU_hw7_2
 
         private void redoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (!redoStack.Any())
+                return;
+            Memo memo = redoStack.Pop();
+            if (memo.filePath==null)
+            {
+                textBox1.Text = memo.Text;
+                textBox1.ForeColor = memo.TextBoxColor;
+                textBox1.Font = new Font(memo.TextBoxFont, memo.TextBoxFontStyle);
+            }
+            else
+            {
+                File.Delete(memo.filePath);
+            }
         }
 
         private void 字數統計ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -215,13 +239,15 @@ namespace NCKU_hw7_2
             else
                 SaveFile(currentFilePath);
 
+            if(notSaved) 檔案ToolStripMenuItem.Text = 檔案ToolStripMenuItem.Text.Substring(1);
+            notSaved=false;
             dialogPresented = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if(notSaved==false) 檔案ToolStripMenuItem.Text = "*"+檔案ToolStripMenuItem.Text;
             notSaved = true;
-            //MessageBox.Show("textchanged");
             Memo memo = new Memo(textBox1.Text,textBox1.Font,textBox1.ForeColor,textBox1.Font.Style);
             history.Push(memo);
         }

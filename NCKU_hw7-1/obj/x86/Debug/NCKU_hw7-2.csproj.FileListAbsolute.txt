@@ -1,0 +1,2 @@
+C:\Users\Seana\source\repos\NCKU_hw7-1\obj\x86\Debug\NCKU_hw7-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw7-1\obj\x86\Debug\NCKU_hw7-2.csproj.CoreCompileInputs.cache

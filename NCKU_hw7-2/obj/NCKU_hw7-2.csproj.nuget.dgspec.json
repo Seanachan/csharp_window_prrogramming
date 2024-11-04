@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Seana\\source\\repos\\NCKU_hw7-2\\NCKU_hw7-2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Seana\\source\\repos\\NCKU_hw7-2\\NCKU_hw7-2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seana\\source\\repos\\NCKU_hw7-2\\NCKU_hw7-2.csproj",
+        "projectName": "NCKU_hw7-2",
+        "projectPath": "C:\\Users\\Seana\\source\\repos\\NCKU_hw7-2\\NCKU_hw7-2.csproj",
+        "packagesPath": "C:\\Users\\Seana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seana\\source\\repos\\NCKU_hw7-2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

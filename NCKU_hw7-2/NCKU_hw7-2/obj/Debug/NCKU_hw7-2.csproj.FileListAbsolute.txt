@@ -22,3 +22,15 @@ C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.exe.confi
 C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.exe
 C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.pdb
 C:\Users\Pai S\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7_2.Form3.resources
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.exe.config
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.exe
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\bin\Debug\NCKU_hw7-1.pdb
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7-2.csproj.AssemblyReference.cache
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7_2.Form1.resources
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7_2.Form2.resources
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7_2.Form3.resources
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7_1.Properties.Resources.resources
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7-2.csproj.GenerateResource.cache
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7-2.csproj.CoreCompileInputs.cache
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7-1.exe
+C:\Users\Seana\source\repos\NCKU_hw7-2\NCKU_hw7-2\obj\Debug\NCKU_hw7-1.pdb
